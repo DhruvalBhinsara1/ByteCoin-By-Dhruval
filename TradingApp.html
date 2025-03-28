@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteCoin by Dhruval</title>
+    <link rel="stylesheet" href="TradingApp.css">
+</head>
+
+<body>
+
+    <!--I haven't thought much about the heading hehe...-->
+
+    <h1 class="Heading">Welcome to the Least Famous Crypto Trading Website !!!</h1>
+    <p class="introtext">I don't even know how you found this but whatever... &#128540; </p>
+
+    <!--this shows the balance and all...-->
+    <div class="Balance">
+        <p id="price">ByteCoin Price: $1000</p>
+        <p id="balance">Your Balance: 0 BYTC</p>
+        <p id="wallet">Your Wallet: $5500</p>
+    </div>
+
+    <!--this shows the buy and sell buttons...-->
+    <input type="number" id="amount" placeholder="Enter BYTC amount">
+    <button id="buyBtn" class="btn">Buy BYTC</button>
+    <button id="sellBtn" class="btn">Sell BYTC</button>
+
+    <!--this is a light or dark mode button-->
+    <br><br>
+
+
+    <!--this shows the history of transactions...-->
+    <div class="history">
+        <p id="lastBought">Last Bought: 0 BYTC at $0</p>
+        <p id="lastSold">Last Sold: 0 BYTC at $0</p>
+    </div>
+    <!--this shows img of cute dogs-->
+    <img id="buyImage" src="happy.jpg" alt="Buying Image" style="display: none; width: 200px;">
+    <img id="sellImage" src="sad.jpg" alt="Selling Image" style="display: none; width: 200px;">
+
+
+    <!--this shows a QR code for donating-->
+    <div class="qr-code-container">
+        <img src="qr.jpg" alt="Fund my filmmaking career QR Code">
+        <p>Fund my filmmaking career by scanning this QR!</p>
+    </div>
+
+
+
+    <!--this shows a footer...-->
+    <div class="footer">
+        <footer>
+            <p>ByteCoin by Dhruval 2025</p>
+        </footer>
+    </div>
+
+    <!--we all know what is this for....-->
+    <script src="TradingApp.js"></script>
+</body>
+
+</html>
