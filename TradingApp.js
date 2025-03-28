@@ -53,6 +53,13 @@ document.getElementById("sellBtn").onclick = () => {
     } else alert("Not enough BYTC!");
 };
 
+function closePopup() {
+    const qrContainer = document.querySelector('.qr-code-container');
+    if (qrContainer) {
+        qrContainer.style.display = 'none';
+    }
+}
+
 document.getElementById("toggleDarkMode").onclick = () => document.body.classList.toggle("dark-mode");
 
 updateDisplay();

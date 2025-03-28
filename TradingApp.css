@@ -5,6 +5,8 @@ body {
     transition: background-color 0.5s, color 0.5s;
 }
 
+
+
 .Heading {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
@@ -84,34 +86,62 @@ input {
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     max-width: 90%;
     width: 20vw;
-    /* Responsive width */
+    /* Default width for larger screens */
+    min-width: 120px;
+    /* Ensures it's not too small */
 }
 
+/* Ensure the image inside the container scales properly */
 .qr-code-container img {
     width: 100%;
     height: auto;
 }
 
-.qr-code-container p {
-    font-size: 15px;
-    font-weight: bold;
-    margin: 5px 0 0;
-}
-
-/* Ensure the footer has space if QR code is close to it */
-.footer {
-    color: white;
-    text-align: center;
-    margin-bottom: 10vh;
-    /* Pushes footer up if QR code is near */
-}
-
-/* Adjustments for smaller screens */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .qr-code-container {
-        width: 30vw;
-        /* Make QR code smaller on smaller screens */
+        width: 25vw;
+        /* Slightly smaller */
         right: 2%;
         bottom: 2%;
     }
+}
+
+@media (max-width: 480px) {
+    .qr-code-container {
+        width: 40vw;
+        /* Bigger for very small screens to remain readable */
+        right: 2%;
+        bottom: 2%;
+    }
+}
+
+
+.footer {
+    color: white;
+    text-align: bottom;
+    margin-top: auto;
+    padding: 10px 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+
+.close-btn:hover {
+    background: darkred;
 }
