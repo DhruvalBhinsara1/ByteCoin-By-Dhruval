@@ -18,7 +18,7 @@ setInterval(() => {
     } else {
         priceElement.style.color = "white"; // No change
     }
-}, 3000);
+}, 1500);
 
 // Function to update balance, wallet, and last transaction details
 function updateDisplay() {
