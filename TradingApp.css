@@ -1,11 +1,9 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #6c6c6c;
+    background-color: #5c5c5c;
     transition: background-color 0.5s, color 0.5s;
 }
-
-
 
 .Heading {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,6 +13,12 @@ body {
     background-color: #4c4c4c;
     color: white;
     border-radius: 10px;
+}
+
+.welcometext {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: lightblue;
 }
 
 .introtext {
@@ -117,13 +121,6 @@ input {
 }
 
 
-.footer {
-    color: white;
-    text-align: bottom;
-    margin-top: auto;
-    padding: 10px 0;
-}
-
 .close-btn {
     position: absolute;
     top: 20px;
@@ -144,4 +141,15 @@ input {
 
 .close-btn:hover {
     background: darkred;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4c4c4c;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
