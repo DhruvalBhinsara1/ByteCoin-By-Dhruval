@@ -58,12 +58,27 @@ body {
     color: white;
 }
 
+#buyBtn:hover {
+
+    background-color: #218838;
+    transition: color 0.3s ease-in-out;
+}
+
 #sellBtn {
     background-color: #dc3545;
     color: white;
 }
 
-#price,
+#sellBtn:hover {
+
+    background-color: #c82333;
+    transition: color 0.3s ease-in-out;
+}
+
+#price {
+    transition: color 0.3s ease-in-out;
+}
+
 #balance,
 #wallet {
     font-size: 20px;
@@ -125,12 +140,13 @@ input {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     background: red;
     color: white;
     border-radius: 50%;
-    font-size: 18px;
+    border-color: none;
+    font-size: 10 px;
     font-weight: bold;
     display: flex;
     align-items: center;
